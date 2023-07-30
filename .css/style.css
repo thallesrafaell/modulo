@@ -11,6 +11,7 @@ body > header{
     font-weight: bold;
 }
 
+
 header .container{
     display: flex;
     align-items: center;
@@ -38,6 +39,7 @@ header a{
 }
 
 section{
+    width: auto;
     padding: 16px;
 }
 
@@ -87,11 +89,16 @@ section  h2, .articles article{
 .container p{
     margin-bottom: 6px;
 }
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 
 #games{
     background-color: rgba(61, 43, 226, 0.548);
+    width: 100%;
 }
 #tec{
     background-color: rgba(100, 87, 223, 0.548);
