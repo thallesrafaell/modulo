@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(224, 219, 219);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title{
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+#tarefa{
+    width: 350px;
+    height: 60px;
+    border: 2px solid grey;
+    outline-color: block ;
+}
+#tarefa::placeholder{
+    font-size: 1.4rem;
+    text-indent: 20px;
+}
+
+#cadastrar{
+    width: 150px;
+    height: 60px;
+    padding: 8px;
+    border: 2px solid grey;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+ul{
+    margin: 15px;
+}
+li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
