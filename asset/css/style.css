@@ -61,7 +61,11 @@ body{
 ul{
     margin: 15px;
 }
-li{
+#tarefas{
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.completas{
+    text-decoration: line-through;
 }
