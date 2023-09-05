@@ -17,5 +17,7 @@ $(document).ready(function(e){
         $(novaTarefa).on('dblclick', () => {
         $(novaTarefa).removeClass('completas')
         })
+
+        $('#tarefa').val('')
     })
 })

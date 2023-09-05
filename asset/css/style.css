@@ -47,6 +47,17 @@ body{
     text-indent: 20px;
 }
 
+
+#tarefa:focus{
+    font-size: 1.4rem;
+    text-indent: 20px;
+}
+
+#tarefa::{
+    font-size: 1.4rem;
+    text-indent: 20px;
+}
+
 #cadastrar{
     width: 150px;
     height: 60px;
