@@ -73,6 +73,7 @@ input{
  border: 1px solid hsl(235, 18%, 26%);
  border-radius: 7px;
  outline: hsl(235, 18%, 26%);
+ text-indent: 20px;
 }
 
 button{
@@ -90,6 +91,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.error{
+    color:  rgb(221, 119, 119);
 }
 
 @media screen and (min-width: 768px){
