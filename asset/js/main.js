@@ -21,7 +21,7 @@ $(document).ready(function(){
             telefone: "Por favor, digite seu telefone.", 
             cpf: "Por favor, digite seu CPF.",
             cep: "Por favor, digite seu CEP.",
-            endereco: "Por favor, digite seu endereço", 
+            endereco: "Por favor, digite seu endereço.", 
         }, submitHandler: function(form){},
     })
     //

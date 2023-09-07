@@ -21,7 +21,7 @@ body{
 }
 
 .container {
-    margin: 0 auto;
+    margin: 10px;
     max-width: 100vw;
     width: 100vh;
 
@@ -84,6 +84,8 @@ button{
     color: white;
     background-color:hsl(235, 18%, 26%);
     font-size: 18px;
+    animation: ease-in;
+    transition-duration: 0.3;
 }
 
 #cadastrar {
@@ -95,6 +97,7 @@ button{
 
 .error{
     color:  rgb(221, 119, 119);
+    font-size: 12px;
 }
 
 @media screen and (min-width: 768px){
@@ -136,6 +139,7 @@ button{
     .container{
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: white;
         border-radius: 18px ;
         overflow-y: none;
@@ -148,9 +152,16 @@ button{
         background-color: aqua;
         background: url(asset/images/illustration-sign-up-desktop.svg) no-repeat;
         background-size: cover;
+        background-position: center right;
         width: 335px;
-        height: 600px;
-        border-radius: 0px;
+        height: 700px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .cadastrar:hover{
+        background-color: hsl(235, 19%, 37%);
+        animation: ease-out;
+        transition-duration: .3s;
     }
 
 
