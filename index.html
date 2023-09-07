@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas - Jquery</title>
-    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="shortcut icon" href="asset/images/favicon-32x32.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
-        <h1 id="title">Lista de Tarefas</h1>
-        <form action="" id="form" class="form">
-            <input type="text" name="tarefas" id="tarefa" placeholder="Nome da tarefa" required>
-            <button type="submit" id="cadastrar">CADASTRAR</button>
-        </form>
-        <ul id="listatarefas">
-        </ul>
+        <div class="img">
+            
+        </div>
+        <div class="container-form">
+            <h2>Cadastre-se</h2>
+            <p><img src="asset/images/icon-list.svg" alt="">Milhares de pessoas ja estao conectadas.</p>
+            <form action="">
+                <div>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="number" name="cpf" id="cpf">
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="number" name="cep" id="cep">
+                </div>
+
+                <div>
+                    <label for="Endereço">Endereço</label>
+                    <input type="text" name="endereco" id="endereco">
+                </div>
+                <div id="cadastrar"><button type="submit">Cadastrar</button></div>
+                
+            </form>
+        </div>
     </div>
-
-    
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="asset/js/main.js"></script>
 </body>
+
 </html>

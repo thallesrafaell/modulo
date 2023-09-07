@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body{
+    background-color: hsl(235, 18%, 26%);
+}
+
+.img{
+    background: url(asset/images/illustration-sign-up-mobile.svg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100vw;
+    width: 100vh;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+    
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+
+h2{
+    padding-bottom: 10px;
+    color: hsl(235, 18%, 26%);
+}
+p{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+p img{
+    margin-right: 5px;
+}
+
+label{
+    padding-bottom: 5px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+}
+
+input{
+ height: 30px;
+ border: 1px solid hsl(235, 18%, 26%);
+ border-radius: 7px;
+ outline: hsl(235, 18%, 26%);
+}
+
+button{
+    width: 80%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid hsl(235, 18%, 26%);
+    color: white;
+    background-color:hsl(235, 18%, 26%);
+    font-size: 18px;
+}
+
+#cadastrar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(235, 18%, 26%);
+    }
+
+
+    .img{
+        border-radius: 10px;
+        background-attachment: cover;
+        width: 500px;
+        height: 300px;
+    }
+
+    .container{
+        width: 395px;
+    }
+
+}
+
+@media screen and (min-width: 1280px){
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(235, 18%, 26%);
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 18px ;
+        overflow-y: none;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+        max-width: 900px;
+        width: 700px;
+    }
+
+    .img{
+        background-color: aqua;
+        background: url(asset/images/illustration-sign-up-desktop.svg) no-repeat;
+        background-size: cover;
+        width: 335px;
+        height: 600px;
+        border-radius: 0px;
+    }
+
+
+}
