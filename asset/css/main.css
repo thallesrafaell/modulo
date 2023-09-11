@@ -1,0 +1,62 @@
+header{
+    background-color: rgb(34, 32, 32);
+    color: white;
+    border-bottom: 5px solid rgba(85, 83, 83, 0.705) ;
+    padding-top: 10px;
+    margin-bottom: 46px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+    height: 100%;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
+header ul li:hover{
+    
+    border-bottom: 3px solid white ;
+
+}
+
+header ul li a:hover{
+    color: white;
+
+}
+
+#home{
+    border-bottom: 3px solid white ;
+}
+
+#home a{
+    color: rgb(245, 239, 239);
+}
+
+form{
+    max-width: 400px;
+}
+#home:hover{
+    border-bottom: 3px solid white ;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+#termos{
+    margin-bottom: 10px;
+}
