@@ -1,0 +1,47 @@
+@import "config/reset.less";
+
+@import "config/maps.less";
+
+@import "config/variaveis.less";
+
+body {
+    background-color: #cores[bgColor];
+}
+
+li {
+    list-style: none;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #cores[bgHeaderColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a{
+            color: #cores[fontAcolor];
+            text-decoration: none;
+        }
+    }
+}
+
