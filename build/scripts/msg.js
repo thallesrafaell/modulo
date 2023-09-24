@@ -1,0 +1,1 @@
+function msg(){return"Hello, World sou uma tarefa no gulp "}module.exports=msg;

@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,KACI,sBAGJ,GACI,uBACA","file":"../main.css","sourcesContent":["body{\r\n    background-color: grey;\r\n}\r\n\r\nh1{\r\n    font-family: sans-serif;\r\n    color: aliceblue;\r\n}"]}
