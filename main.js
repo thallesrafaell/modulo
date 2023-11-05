@@ -1,35 +1,42 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const avatar = document.getElementById('avatar')
-    const nome = document.getElementById('nome')
-    const usuario = document.getElementById('usuario')
-    const repositorios = document.getElementById('repositorios')
-    const seguidores = document.getElementById('seguidores')
-    const seguindo = document.getElementById('seguindo')
-    const linkPerfil = document.getElementById('link-perfil')
-    const endpoint = 'https://api.github.com/users/thallesrafaell'
+function Animal(especie, cor, extinto, idade) {
+    this.especie = especie
+    this.cor = cor
+    this.extinto = extinto
+    this.idade = idade
 
-    fetch(endpoint)
-    .then(function (resposta) {
-        return resposta.json()
-    })
-    .then(function (json) {
-        const apitAvatar = json.avatar_url
-        const apiNome = json.name
-        const apiUsuario = json.login
-        const apiRepositorios = json.public_repos
-        const apiSeguidores = json.followers
-        const apiSeguindo =json.following
-        const apiLinkPerfil = json.html_url
+    this.comer = function () {
+        console.log(this.especie + " está comendo")
+    }
+    
+    this.dormir =function () {
+        console.log(this.especie + " está dormindo" )
+    }
 
-        avatar.setAttribute('src', apitAvatar)
-        nome.innerText = apiNome
-        usuario.innerText =  `@${apiUsuario}`
-        repositorios.innerText = apiRepositorios
-        seguidores.innerText = apiSeguidores
-        seguindo.innerText = apiSeguindo
-        linkPerfil.setAttribute('href', apiLinkPerfil)
-    })
-    .catch(function(erro){
-        alert("Ocorreu um Erro")
-    })
-})
+   
+}
+
+function Ave(nome, cor, extinto, idade, bico, voa) {
+    this.bico = bico
+    this.voa = voa
+
+    Animal.call(this, nome, cor, extinto, idade)
+
+    this.voando = function () {
+        console.log(this.especie + " Está voando")
+    }
+}
+
+function Dinossauro(nome, cor, extinto, idade, carnivoro , hebivoro) {
+    this.carnivoro =carnivoro
+    this.hebivoro = hebivoro
+    Animal.call(this, nome, cor , extinto, idade)
+
+}
+
+const tiranossaurorex = new Dinossauro("Tiranossauro Rex","cinza",true , 1000, true, false)
+const braquiossauro = new Dinossauro("Braquiossauro", "Azul", true, 1000, false, true)
+const tucano = new Ave("Tucano", "Preto", false, 10, "Grande", true)
+
+console.log(tiranossaurorex.dormir())
+console.log(braquiossauro.comer())
+console.log(tucano.voando())
