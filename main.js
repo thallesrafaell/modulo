@@ -1,42 +1,18 @@
-function Animal(especie, cor, extinto, idade) {
-    this.especie = especie
-    this.cor = cor
-    this.extinto = extinto
-    this.idade = idade
+const alunos = [
+  { nome: "Thalles", curso: "Full-Stack Java", nota: 8 },
+  { nome: "Harry", curso: "Full-Stack Java", nota: 6 },
+  { nome: "Gina", curso: "Full-Stack Java", nota: 7 },
+  { nome: "Naruto", curso: "Full-Stack Java", nota: 3 },
+  { nome: "Monk D. Luffy", curso: "Full-Stack Java", nota: 2 },
+  { nome: "Frank", curso: "Full-Stack Java", nota: 10 },
+  { nome: "Sasuske", curso: "Full-Stack Java", nota: 8 },
+  { nome: "Gabriel", curso: "Full-Stack Java", nota: 4 },
+];
 
-    this.comer = function () {
-        console.log(this.especie + " está comendo")
-    }
-    
-    this.dormir =function () {
-        console.log(this.especie + " está dormindo" )
-    }
-
-   
-}
-
-function Ave(nome, cor, extinto, idade, bico, voa) {
-    this.bico = bico
-    this.voa = voa
-
-    Animal.call(this, nome, cor, extinto, idade)
-
-    this.voando = function () {
-        console.log(this.especie + " Está voando")
-    }
-}
-
-function Dinossauro(nome, cor, extinto, idade, carnivoro , hebivoro) {
-    this.carnivoro =carnivoro
-    this.hebivoro = hebivoro
-    Animal.call(this, nome, cor , extinto, idade)
-
-}
-
-const tiranossaurorex = new Dinossauro("Tiranossauro Rex","cinza",true , 1000, true, false)
-const braquiossauro = new Dinossauro("Braquiossauro", "Azul", true, 1000, false, true)
-const tucano = new Ave("Tucano", "Preto", false, 10, "Grande", true)
-
-console.log(tiranossaurorex.dormir())
-console.log(braquiossauro.comer())
-console.log(tucano.voando())
+const aprovados = alunos.filter( alunos => {
+  if (alunos.nota >= 6) {
+    console.log(
+      `O aluno ${alunos.nome} foi aprovado no curso ${alunos.curso} com a nota ${alunos.nota}`
+    );
+  }
+});
